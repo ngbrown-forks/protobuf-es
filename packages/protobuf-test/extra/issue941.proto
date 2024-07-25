@@ -19,3 +19,16 @@ message ProtoGearRatioLimit {
   double high_limit = 2;
   double low_limit = 3;
 }
+
+message ProtoRpcRequest {
+  int32 stand_id = 1;
+  int32 timestamp = 2;
+  Type type = 3;
+  enum Type {
+    UNSPECIFIED = 0;
+    DATA_COLLECTION_START_MANUAL_RECORD_COMMAND = 1;
+  }
+  DataCollectionStartManualRecordCommand data_collection_start_manual_record_command = 4;
+}
+
+message DataCollectionStartManualRecordCommand {}

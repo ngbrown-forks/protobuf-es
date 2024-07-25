@@ -16,13 +16,13 @@
 // @generated from file extra/issue941.proto (syntax proto3)
 /* eslint-disable */
 
-import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
+import { enumDesc, fileDesc, messageDesc, tsEnum } from "@bufbuild/protobuf/codegenv1";
 
 /**
  * Describes the file extra/issue941.proto.
  */
 export const file_extra_issue941 = /*@__PURE__*/
-  fileDesc("ChRleHRyYS9pc3N1ZTk0MS5wcm90byJKChNQcm90b0dlYXJSYXRpb0xpbWl0EgwKBGdlYXIYASABKAUSEgoKaGlnaF9saW1pdBgCIAEoARIRCglsb3dfbGltaXQYAyABKAFiBnByb3RvMw");
+  fileDesc("ChRleHRyYS9pc3N1ZTk0MS5wcm90byJKChNQcm90b0dlYXJSYXRpb0xpbWl0EgwKBGdlYXIYASABKAUSEgoKaGlnaF9saW1pdBgCIAEoARIRCglsb3dfbGltaXQYAyABKAEigwIKD1Byb3RvUnBjUmVxdWVzdBIQCghzdGFuZF9pZBgBIAEoBRIRCgl0aW1lc3RhbXAYAiABKAUSIwoEdHlwZRgDIAEoDjIVLlByb3RvUnBjUmVxdWVzdC5UeXBlElwKK2RhdGFfY29sbGVjdGlvbl9zdGFydF9tYW51YWxfcmVjb3JkX2NvbW1hbmQYBCABKAsyJy5EYXRhQ29sbGVjdGlvblN0YXJ0TWFudWFsUmVjb3JkQ29tbWFuZCJICgRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASLworREFUQV9DT0xMRUNUSU9OX1NUQVJUX01BTlVBTF9SRUNPUkRfQ09NTUFORBABIigKJkRhdGFDb2xsZWN0aW9uU3RhcnRNYW51YWxSZWNvcmRDb21tYW5kYgZwcm90bzM");
 
 /**
  * Describes the message ProtoGearRatioLimit.
@@ -30,4 +30,30 @@ export const file_extra_issue941 = /*@__PURE__*/
  */
 export const ProtoGearRatioLimitSchema = /*@__PURE__*/
   messageDesc(file_extra_issue941, 0);
+
+/**
+ * Describes the message ProtoRpcRequest.
+ * Use `create(ProtoRpcRequestSchema)` to create a new message.
+ */
+export const ProtoRpcRequestSchema = /*@__PURE__*/
+  messageDesc(file_extra_issue941, 1);
+
+/**
+ * Describes the enum ProtoRpcRequest.Type.
+ */
+export const ProtoRpcRequest_TypeSchema = /*@__PURE__*/
+  enumDesc(file_extra_issue941, 1, 0);
+
+/**
+ * @generated from enum ProtoRpcRequest.Type
+ */
+export const ProtoRpcRequest_Type = /*@__PURE__*/
+  tsEnum(ProtoRpcRequest_TypeSchema);
+
+/**
+ * Describes the message DataCollectionStartManualRecordCommand.
+ * Use `create(DataCollectionStartManualRecordCommandSchema)` to create a new message.
+ */
+export const DataCollectionStartManualRecordCommandSchema = /*@__PURE__*/
+  messageDesc(file_extra_issue941, 2);
 

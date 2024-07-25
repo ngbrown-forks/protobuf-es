@@ -16,7 +16,7 @@
 // @generated from file extra/issue941.proto (syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
+import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
@@ -49,4 +49,67 @@ export declare type ProtoGearRatioLimit = Message<"ProtoGearRatioLimit"> & {
  * Use `create(ProtoGearRatioLimitSchema)` to create a new message.
  */
 export declare const ProtoGearRatioLimitSchema: GenMessage<ProtoGearRatioLimit>;
+
+/**
+ * @generated from message ProtoRpcRequest
+ */
+export declare type ProtoRpcRequest = Message<"ProtoRpcRequest"> & {
+  /**
+   * @generated from field: int32 stand_id = 1;
+   */
+  standId: number;
+
+  /**
+   * @generated from field: int32 timestamp = 2;
+   */
+  timestamp: number;
+
+  /**
+   * @generated from field: ProtoRpcRequest.Type type = 3;
+   */
+  type: ProtoRpcRequest_Type;
+
+  /**
+   * @generated from field: DataCollectionStartManualRecordCommand data_collection_start_manual_record_command = 4;
+   */
+  dataCollectionStartManualRecordCommand?: DataCollectionStartManualRecordCommand;
+};
+
+/**
+ * Describes the message ProtoRpcRequest.
+ * Use `create(ProtoRpcRequestSchema)` to create a new message.
+ */
+export declare const ProtoRpcRequestSchema: GenMessage<ProtoRpcRequest>;
+
+/**
+ * @generated from enum ProtoRpcRequest.Type
+ */
+export enum ProtoRpcRequest_Type {
+  /**
+   * @generated from enum value: UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: DATA_COLLECTION_START_MANUAL_RECORD_COMMAND = 1;
+   */
+  DATA_COLLECTION_START_MANUAL_RECORD_COMMAND = 1,
+}
+
+/**
+ * Describes the enum ProtoRpcRequest.Type.
+ */
+export declare const ProtoRpcRequest_TypeSchema: GenEnum<ProtoRpcRequest_Type>;
+
+/**
+ * @generated from message DataCollectionStartManualRecordCommand
+ */
+export declare type DataCollectionStartManualRecordCommand = Message<"DataCollectionStartManualRecordCommand"> & {
+};
+
+/**
+ * Describes the message DataCollectionStartManualRecordCommand.
+ * Use `create(DataCollectionStartManualRecordCommandSchema)` to create a new message.
+ */
+export declare const DataCollectionStartManualRecordCommandSchema: GenMessage<DataCollectionStartManualRecordCommand>;
 
